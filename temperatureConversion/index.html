@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temperature Converter</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="logo">
-      <h1>Temperature Converter</h1>
-      <svg width="72" height="64" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 0C10.3431 0 9 1.34315 9 3V18.1715C7.07714 19.0976 6 21.0771 6 23C6 26.3137 8.68629 29 12 29C15.3137 29 18 26.3137 18 23C18 21.0771 16.9229 19.0976 15 18.1715V3C15 1.34315 13.6569 0 12 0Z" fill="#E74C3C"/>
-        <path d="M12 25C13.6569 25 15 23.6569 15 22C15 20.3431 13.6569 19 12 19C10.3431 19 9 20.3431 9 22C9 23.6569 10.3431 25 12 25Z" fill="#2980B9"/>
-        <path d="M12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21Z" fill="white"/>
-      </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>Temperature Converter</h1>
+        <svg
+          width="72"
+          height="64"
+          viewBox="0 0 24 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 0C10.3431 0 9 1.34315 9 3V18.1715C7.07714 19.0976 6 21.0771 6 23C6 26.3137 8.68629 29 12 29C15.3137 29 18 26.3137 18 23C18 21.0771 16.9229 19.0976 15 18.1715V3C15 1.34315 13.6569 0 12 0Z"
+            fill="#E74C3C"
+          />
+          <path
+            d="M12 25C13.6569 25 15 23.6569 15 22C15 20.3431 13.6569 19 12 19C10.3431 19 9 20.3431 9 22C9 23.6569 10.3431 25 12 25Z"
+            fill="#2980B9"
+          />
+          <path
+            d="M12 21C12.5523 21 13 20.5523 13 20C13 19.4477 12.5523 19 12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="converter">
+        <input type="number" id="temperature" placeholder="Enter temperature" />
+        <label for="unit">Select temperature scale:</label>
+        <select id="unit">
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+      </div>
+      <div class="result" id="result">
+        <h4>Result comes Here:</h4>
+      </div>
+      <p class="copy">&copy; by Ashok Neupane</p>
+      <br>
+      <a href="https://github.com/ashokneupane100/500-Plus-JavaScript-Projects/tree/main/temperatureConversion" target="_blank">
+      <div >
+        <button class="sourcecode">Click For Source Code</button>
+      </div>
+      </a>
     </div>
-    <div class="converter">
-      <input type="number" id="temperature" placeholder="Enter temperature" />
-      <label for="unit">Select temperature scale:</label>
-      <select id="unit">
-        <option value="C">Celsius</option>
-        <option value="F">Fahrenheit</option>
-      </select>
-      <button onclick="convertTemperature()">Convert</button>
-    </div>
-    <div class="result" id="result">
-      <h4>See the Result Here:</h4>
-    </div>
-    <p class="copy">&copy; by Ashok Neupane</p>
-  </div>
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
