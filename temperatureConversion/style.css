@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f18585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(1, 2, 24);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    color: #ffffff; /* Set text color to white */
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: inherit; /* Inherit color from parent container */
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.converter input[type="number"] {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left; /* Center the text horizontally */
+}
+
+.converter select {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    font-size: 18px;
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,5" fill="%23000"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+}
+
+.converter button {
+    padding: 15px 30px;
+    background-color: #226e03;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #004466; /* Change background on hover for better UX */
+}
+
+.result {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333333;
+    background-color: #f1d6d6;
+    padding:1rem;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom:1em;
+}
+.logo{
+    display:flex;
+   
+
+}
