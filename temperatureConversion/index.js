@@ -13,3 +13,6 @@ function convertTemperature() {
         document.getElementById('result').innerText = `${temperatureInput} °F = ${result.toFixed(2)} °C`;
     }
 }
+
+
+//this branch to be deployed into vercel
