@@ -1,6 +1,6 @@
 const testimonials = [
     {
-        name: "डॉ. रामचन्द्र अधिकारी",
+        name: "रामचन्द्र अधिकारी",
         photoUrl: "https://media.istockphoto.com/id/505145335/photo/portrait-of-mature-man-talking-on-phone.jpg?s=1024x1024&w=is&k=20&c=8bHzEBMnwIhdJfpfwptNVmseBdQvwdZGbONBV9lSPHE=",
         text: "टेकजीनियस सोल्युसन्सले हाम्रो व्यवसायलाई ठूलो मद्दत गरेको छ। यो निश्चित रूपमा लगानीको योग्य हो।",
     },
