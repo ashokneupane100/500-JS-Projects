@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: cursive;
+    background-color: rgb(186, 196, 186);
+}
+
+.testimonial-container {
+    width: 70%;
+    height: 30%;
+    background-color: rgba(2, 6, 39, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+    min-width: 60%;
+    padding: 70px 20px;
+    margin: 5px;
+    color: white;
+    position: relative;
+    text-align: center; /* Center text */
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -60px;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px; /* Added margin for better spacing */
+}
+
+.text {
+    font-size: 1rem;
+}
